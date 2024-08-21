@@ -1,0 +1,39 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col
+        size="12"
+        class="display"
+        [ngClass]="{encendido:lightMode, apagado:!lightMode}"
+      >
+        <app-display [borderUp]="aumenta" number="{{number()}}"></app-display>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <app-custom-button
+    (doAction)="doActionButton($event)"
+    [action]="acciones.restar"
+    icon="remove-outline"
+    [margin]="50"
+  ></app-custom-button>
+  <app-custom-button
+    (doAction)="doActionButton($event)"
+    [action]="acciones.sumar"
+    icon="add"
+    [margin]="120"
+  ></app-custom-button>
+  <app-custom-button
+    (doAction)="doActionButton($event)"
+    [action]="acciones.reiniciar"
+    icon="refresh-outline"
+    [margin]="190"
+  ></app-custom-button>
+  <app-custom-button
+    (doAction)="doActionButton($event)"
+    [action]="acciones.lightmode"
+    icon="power-outline"
+    [margin]="30"
+    position="top"
+  ></app-custom-button>
+</ion-content>

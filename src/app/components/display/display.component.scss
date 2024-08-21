@@ -1,0 +1,13 @@
+ion-label{
+  font-size:250px;
+  text-shadow: 3px 3px 5px gray, 5px 6px 8px black;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.border-up {
+  border-top: 3px solid lime;
+  border-bottom: 0;
+}
+.border-bottom {
+  border-bottom: 3px solid lime;
+  border-top: 0;
+}

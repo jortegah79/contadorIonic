@@ -1,0 +1,22 @@
+@if (position==='top') {
+<ion-fab  vertical="top"  horizontal="end"  slot="fixed"
+[ngStyle]="{ top: tamano, 'right':'25px' }"
+>
+  <ion-fab-button [ngClass]="{encendido:lightMode,apagado:!lightMode}"
+  (click)="emitAction(action)">
+    <ion-icon [name]="icon"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+}@else{
+
+<ion-fab  vertical="bottom"  horizontal="end"  slot="fixed"
+[ngStyle]="{ bottom: tamano,'right': '25px' }"
+>
+  <ion-fab-button [ngClass]="{encendido:lightMode,apagado:!lightMode}"
+  (click)="emitAction(action)">
+    <ion-icon [name]="icon"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+}

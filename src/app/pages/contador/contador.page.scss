@@ -1,0 +1,26 @@
+.display {
+  height: 100vh;
+
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.encendido {
+    background-image: linear-gradient(
+      to bottom,
+      var(--ion-color-primary),
+      var(--ion-color-secondary)
+    );
+    color: #f5f5f5;
+  }
+  &.apagado {
+    background-image: linear-gradient(
+      to bottom,
+      var(--ion-color-tertiary),
+      var(--ion-color-success)
+    );
+    color: #f5f5f5;
+  }
+
+}
