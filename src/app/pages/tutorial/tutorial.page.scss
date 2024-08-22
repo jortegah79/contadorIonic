@@ -1,8 +1,15 @@
 swiper-slide {
   width:100vw;
-  height: 90vh;
+  height: 100vh;
  & img{
   background-size: cover;
   height:100%;
  }
+}
+.swbutton{
+  position:absolute!important ;
+  bottom:30px;
+  z-index:10 !important;
+  width:90%;
+  margin:0 5%;
 }
